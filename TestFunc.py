@@ -2,7 +2,7 @@ import requests,pyodbc,json,pymysql,logging
 from jsondiff import diff
 
 #-------------MYSQL ----------------------
-connection = pymysql.connect(host='localhost',user='root',password='data@123',db='sriram')
+connection = pymysql.connect(host='localhost',user='root',password='your_mysql_password',db='database_name')
 
 def createTable(connection):
     cursor_obj = connection.cursor()
